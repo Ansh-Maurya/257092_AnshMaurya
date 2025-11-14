@@ -1,0 +1,81 @@
+
+
+
+
+DBMS - Database management system
+
+Tabular form and json form-
+
+---> In tabular form data is store in form of tables (rows and columns). example: MySQL
+customer_id	first_name	last_name	age	country
+1		John		Doe		31	USA
+2		Robert		Luna		22	USA
+3		David		Robinson	22	UK
+4		John		Reinhardt	25	UK
+5		Betty		Doe		28	UAE
+
+---> In json form data is stored as:
+		{
+  			"name": "John",
+  			"age": 30,
+  			"isStudent": false,
+  			"courses": ["Math", "Science", "History"]
+		}
+
+MYSQL -
+CREATE: It creates a table in MySQL.
+ex: Create table Students(StudentsID varchar(100),Age int(100),City varchar(30));
+
+INSERT: It enables us to add data in the created table.
+ex: Insert into Students values("Rachit",18,"Gurgaon");
+
+Select: Use to display data.
+
+|	To change the structure of data			  |         To change the data                                   |		
+|			     👇						  |			    👇                                    		|
+|	DDL (Data Definition Language)                  |         DML(Data Manipulation Language)	| 
+|	1.Create								  |	    1.Select							|
+|	2.Alter - To change in the existing table	  |	    2.Update							|
+|	3.Drop - Remove the DB				  |	    3.Insert							|
+|	4.Truncate - Remove the table     		  |	    4.Delete							|
+
+CREATE: It creates a table in MySQL.
+ex: Create table Students(StudentsID varchar(100),Age int(100),City varchar(30));
+
+INSERT: It enables us to add data in the created table.
+ex: Insert into Students values("Rachit",18,"Gurgaon");
+
+SELECT: Use to display data.
+
+ALTER: To make the changes in the existing table.
+
+DROP: To remove the Database or Table.
+
+TRUNCATE: To remove the table.
+
+
+LOGICAL OPERATORS:-
+AND: select * from EMPLOYEE where empId > 2 and empId<5;
+
+NOT: select * from EMPLOYEE where not empId > 2;
+
+
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0004, 'Gkk', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0005, 'Abs', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0006, 'anda', 'Accounting');
+
+-- fetch 
+SELECT * from EMPLOYEE WHERE name like '%a';
+
